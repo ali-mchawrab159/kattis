@@ -29,3 +29,10 @@ jobs:
 
       - name: Run tests
         run: poetry run pytest
+
+      - name: Run tests with coverage
+        run: |
+          poetry run coverage run -m pytest
+          poetry run coverage report -m
+          poetry run coverage xml
+          coverage-badge -o coverage.svg
