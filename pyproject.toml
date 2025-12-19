@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
-
+marimo = "^0.10"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^9.0.2"
